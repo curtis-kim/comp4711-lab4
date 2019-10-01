@@ -5,73 +5,75 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Lab2</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-
-    <div class="artistDirectory">
-        <div class="innerArtistDirectory">
+    <p></p>
+    <div class="card">
+        <div class="title">
             <h2>Artist Directory</h2>
-            <input type="text" id="artistInput" onkeyup="myFunction()" placeholder="">
         </div>
 
+
+        <form class="form-inline">
+            <input class="form-control1" type="text" placeholder="Search" aria-label="Search">
+            <button onclick="expandForm(); return false;" class="AddArtistBtn" id="formToggleButton">Add
+                artist</button>
+        </form>
+
+
     </div>
+    <div class="inner-card">
+        <form id="newForm">
+            <div class="boxform">
+                <input type="text" class="form-control text-center" id="artistNameForm" placeholder="Artist Name"
+                    maxlength="40">
+
+
+                <input type="text" class="form-control text-center" id="aboutArtistForm" placeholder="About artist"
+                    maxlength="40">
+
+
+                <input type="text" class="form-control text-center" id="imageURLForm" placeholder="Image Url" required>
+
+            </div>
+
+
+            <div class="text-center">
+                <button onclick = "addArtist(); return false;" class="AddBtn" id="NewArtistSubmit">Add</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+    </div>
+
+
+
     <div class="artistList">
-        <table>
-            <tr>
-                <td><img src="https://randomuser.me/api/portraits/med/women/1.jpg"></td>
-                <td>
-                    <h3>Abigail</h3>
-                    <p></p>
-                    Royal Academy of Painting and Sculpture
-                </td>
-            </tr>
-            <tr>
-                <td><img src="https://randomuser.me/api/portraits/med/women/2.jpg"></td>
-                <td>
-                    <h3>Barbara</h3>
-                    <p></p>
-                    Artist to Watch in 2012
-                </td>
-            </tr>
-            <tr>
-                <td><img src="https://randomuser.me/api/portraits/med/women/3.jpg"></td>
-                <td>
-                    <h3>Camille</h3>
-                    <p></p>
-                    New York University
-                </td>
-            </tr>
-            <tr>
-                <td><img src="https://randomuser.me/api/portraits/med/men/1.jpg"></td>
-                <td>
-                    <h3>Kyle</h3>
-                    <p></p>
-                    Art College in New York
-                </td>
-            </tr>
-            <tr>
-                <td><img src="https://randomuser.me/api/portraits/med/women/5.jpg"></td>
-                <td>
-                    <h3>Jennifer Jerome</h3>
-                    <p></p>
-                    Art School
-                </td>
-            </tr>
+        <table id="artisTable">
+
 
         </table>
 
     </div>
 
 
+
+
+
 </body>
+
+<script src="js/script.js"></script>
 
 </html>

@@ -1,3 +1,53 @@
+#newForm{
+    display:none;
+}
+
+.inner-card{
+    
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
+}
+.boxform{
+    text-align: center
+}
+.AddBtn{
+    background-color: lightgray;
+    height: 4.5%;
+    width: 20%;
+}
+.card{
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
+}
+.text-center{
+    text-align: center;
+}
+.form-inline{
+    text-align: center;
+}
+.form-control1{
+    width: 80%;
+    height: 4.5%;
+}
+.form-control{
+    width: 60%;
+    height: 4.5%;
+}
+.AddArtistBtn{
+    background-color: lightgray;
+    height: 4.5%;
+}
+.deleteBtn{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    height: 30px;
+    width: 60px;
+    margin-right: 20%;
+}
 .artistDirectory{
     border: 1px solid #DCDCDC;
     text-align: left;
@@ -19,6 +69,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+.title{
+    margin-left: 15px;
+}
 h2{
     font-family: 'Courier New', Courier, monospace
 }
@@ -29,9 +82,15 @@ table {
     margin-right: auto;
     border-collapse: collapse;
 }
-table td{
+table tr{
     border: 1px solid #DCDCDC;
-    border-collapse: collapse  
+ 
+}
+table td:nth-child(2){
+    width: 200px;
+}
+table td:nth-child(3){
+    width: 80px;
 }
 table h3{
     font-family: Georgia, 'Times New Roman', Times, serif
