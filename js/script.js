@@ -80,10 +80,10 @@ function removeRow(oButton) {
     var cell = table.rows[oButton.parentNode.parentNode.rowIndex].cells[0]
     var url = cell.querySelector('img').src
     var data = localStorage.getItem(url);
-    console.log(url)
     console.log(data)
-
+    
     localStorage.removeItem(url)
+    
     table.deleteRow(oButton.parentNode.parentNode.rowIndex);
 }
 

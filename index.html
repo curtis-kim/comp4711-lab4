@@ -1,8 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Lab3</title>
-    <meta charset="UTF-8">
+    <title>Lab4</title>
+    <meta charset="UTF-8" />
+
     <meta name="description" content="Lab 3">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Curtis Kim">
@@ -23,7 +25,8 @@
 
 
         <form class="form-inline">
-            <input class="form-control1" id="myInput" type="text" placeholder="Search" aria-label="Search" onkeyup="searchbarFunction()">
+            <input class="form-control1" id="myInput" type="text" placeholder="Search" aria-label="Search"
+                onkeyup="searchbarFunction()">
             <button onclick="expandForm(); return false;" class="AddArtistBtn" id="formToggleButton">Add
                 artist</button>
         </form>
@@ -31,24 +34,19 @@
 
     </div>
     <div class="inner-card">
-        <form id="newForm">
+        <form id="newForm" action="javascript:;" onsubmit="addArtist(); return false;">
             <div class="boxform">
                 <input type="text" class="form-control text-center" id="artistNameForm" placeholder="Artist Name"
-                    maxlength="40">
-
-
+                    maxlength="40" required />
                 <input type="text" class="form-control text-center" id="aboutArtistForm" placeholder="About artist"
-                    maxlength="40">
-
-
-                <input type="text" class="form-control text-center" id="imageURLForm" placeholder="Image Url" required>
-
+                    maxlength="40" required />
+                <input type="text" class="form-control text-center" id="imageURLForm" placeholder="Image Url"
+                    required />
             </div>
-
-
             <div class="text-center">
-                <button onclick = "addArtist(); return false;" class="AddBtn" id="NewArtistSubmit">Add</button>
+                <button type="submit" class="AddBtn" id="NewArtistSubmit">Add</button>
             </div>
+
 
         </form>
     </div>
